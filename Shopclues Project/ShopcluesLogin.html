@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://store-images.s-microsoft.com/image/apps.20666.13510798883311347.b2862cbf-b4ca-49f7-86ca-4ddafc840192.b1f9f7b9-6ded-4f81-9f75-55469a5e43e6?w=180&h=180&q=60">
+    <title>ShopClues - Sign In</title>
+    <link rel="stylesheet" href="LoginStyles.css">
+</head>
+<body>
+    <div class="container">
+        <form class="sign-in-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <i class="fas fa-eye"></i>
+                </span>
+            </div>
+            <button type="submit">Submit</button>
+            <p>Don't have an account? <a href="ShopcluesSignup.html">Register/Sign Up</a></p>
+        </form>
+    </div>
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("password");
+            var toggleButton = document.querySelector(".toggle-password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleButton.innerHTML = '<i class="fas fa-eye-slash"></i>';
+                passwordField.style.width = passwordField.offsetWidth + "px"; // Preserve width
+            } else {
+                passwordField.type = "password";
+                toggleButton.innerHTML = '<i class="fas fa-eye"></i>';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,852 @@
+/* General Styles */
+
+.logo {
+    display: flex;
+    align-items: left;
+    padding: 20;
+    height: 25px;
+    width: 500;
+    text-align:left;
+    
+  }
+  
+  .logo img {
+    max-width: 100px;
+    align-items: left;
+    background-color: aqua;
+    height: 30px;
+    width: 100px;
+    text-align: left;
+
+     /* Adjust the size as needed */
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  header {
+    background-color:white;
+    padding: 10px;
+    align-items: left;
+  }
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .navbar a.active {
+    background-color:#ddd;
+    color:#333;
+  }
+
+  .section{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0%;
+    padding: 20;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.1);
+    
+    
+  }
+/* Style the content section */
+.content {
+  padding: px;
+  text-align: center; /* Align text to the center */
+}
+
+/* Example styles for headings and paragraphs within the content */
+.content h1 {
+  font-size: 24px;
+  color: #333;
+  line-height:1px;
+}
+
+.content p {
+  font-size: 16px;
+  color: #666;
+  line-height:1px;
+}
+
+  
+ .Login-container{
+  background-color: white;
+  padding: 7px 40px;
+  font-size: 18px;
+  border-radius: 2px;
+  height: 10px;
+  width: 20px;
+  align-items: right;
+  text-align: right;
+
+ }
+ .Login-container a{
+  color: blue;
+  font-weight: 550px;
+  text-align: right;
+ }
+ 
+ .login-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px; /* Adjusted padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px; /* Adjusted font size */
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+  main {
+    padding: 20px;
+  }
+  
+.banner-slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Adjust the width as needed */
+  margin: auto; /* Center the banner-slider */
+}
+
+.banner {
+  height: 270px; /* Adjust the height as needed */
+  width: 100%;
+  flex: 0 0 auto;
+  animation: bannerAnimation 12s infinite;
+  padding: 10px;
+  margin: 10px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%; /* Set the height to 100% to fill the banner */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire banner */
+}
+
+@keyframes bannerAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+
+  
+.Budget {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.image-container {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px; /* Adjust spacing between circular images */
+  width: 200px; /* Set the width of each circular image container */
+  height: 200px; /* Set the height of each circular image container */
+}
+.image-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* To maintain image aspect ratio */
+  border-radius: 50%; /* Ensure images inside the containers are circular */
+}
+.Store{
+  text-align: left;
+}
+
+.Budget {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.image-container {
+  display: inline-block;
+  margin-right: 20px; /* Adjust spacing between images */
+  animation: marquee 10s linear infinite;
+}
+
+.image-container:last-child {
+  margin-right: 0; /* Remove margin for the last image */
+}
+
+.image-container img {
+  height: 200px;
+  width: 200px;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+    /* Styling for social media icons */
+    .pinterest-icon { background-color: #bd081c;
+.social-links {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .discount {
+      color:blue; /* Change 'red' to your desired color */
+    }
+    .brand-details{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f8f9fa;
+  }
+  
+  .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  
+  .product {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      margin: 10px;
+      width: calc(33.33% - 20px); /* 33.33% width with 20px margin */
+  }
+  
+  .product:hover {
+      transform: scale(1.05);
+  }
+  
+  img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+  }
+  
+  .discount-info {
+      color: #dc3545;
+      font-weight: bold;
+  }
+  
+  .product p {
+      margin: 10px 0;
+  }
+  
+  .product a {
+      text-decoration: none;
+      color: #000;
+  }
+  
+  .product a:hover {
+      text-decoration: underline;
+  }
+  
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+    }
+
+    /* Customize each social media icon */
+    .facebook-icon { background-color: #3b5998; }
+    .twitter-icon { background-color: #1da1f2; }
+    .instagram-icon { background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); }
+  }
+  footer {
+    background-color: hsl(257, 88%, 46%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10%;
+  }
+  .brand-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .brand {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust the margin between brands */
+    width: calc(33.33% - 20px); /* Calculate width for three images with margin */
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .brand-info {
+    margin-top: 15px;
+  }
+
+  .brand-info h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .brand-info p {
+    color: #666;
+    font-size: 14px;
+  }
+
+  .brand-info a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #e44d26;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .brand img:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .brand img {
+    max-width: 100%;
+    border-radius: 8px; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .brand:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .brand img-container {
+    width: 200px; /* Set a fixed width for each image container */
+    margin: 0 auto; /* Center the image container */
+    border: 1px solid burlywood; /* Add a border around the image container */
+    border-radius: 8px; /* Adjust the border-radius as needed */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  .deals-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .day {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust the margin between days */
+    width: calc(33.33% - 20px); /* Calculate width for three images with margin */
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  
+  .day img {
+    max-width: 100%;
+    border-radius: 8px; /* Adjust the border-radius as needed */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .day-info {
+    margin-top: 15px;
+  }
+  
+  .day-info h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .day-info p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .day-info a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #e44d26;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .day img:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .day:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .day img-container {
+    width: 200px; /* Set a fixed width for each image container */
+    margin: 0 auto; /* Center the image container */
+    border: 1px solid burlywood; /* Add a border around the image container */
+    border-radius: 8px; /* Adjust the border-radius as needed */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  /* Add this CSS to your existing stylesheet */
+
+.women-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.fashion {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust the margin between fashion items */
+  width: calc(33.33% - 20px); /* Calculate width for three images with margin */
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.fashion img {
+  max-width: 100%;
+  border-radius: 8px; /* Adjust the border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fashion-info {
+  margin-top: 15px;
+}
+
+.fashion-info h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.fashion-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+.fashion-info a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #e44d26;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.fashion img:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fashion:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fashion img-container {
+  width: 200px; /* Set a fixed width for each image container */
+  margin: 0 auto; /* Center the image container */
+  border: 1px solid burlywood; /* Add a border around the image container */
+  border-radius: 8px; /* Adjust the border-radius as needed */
+  overflow: hidden; /* Hide any overflowing content */
+}
+/* Add this CSS to your existing stylesheet */
+
+.men-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.wear {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust the margin between wear items */
+  width: calc(33.33% - 20px); /* Calculate width for three images with margin */
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.wear img {
+  max-width: 100%;
+  border-radius: 8px; /* Adjust the border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.wear-info {
+  margin-top: 15px;
+}
+
+.wear-info h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.wear-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+.wear-info a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #e44d26;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.wear img:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.wear:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wear img-container {
+  width: 200px; /* Set a fixed width for each image container */
+  margin: 0 auto; /* Center the image container */
+  border: 1px solid burlywood; /* Add a border around the image container */
+  border-radius: 8px; /* Adjust the border-radius as needed */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Add this CSS to your existing stylesheet */
+
+.footwear-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.foot {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust the margin between foot items */
+  width: calc(33.33% - 20px); /* Calculate width for three images with margin */
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.foot img {
+  max-width: 100%;
+  border-radius: 8px; /* Adjust the border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.foot-info {
+  margin-top: 15px;
+}
+
+.foot-info h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.foot-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+.foot-info a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #e44d26;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.foot img:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.foot:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.foot img-container {
+  width: 200px; /* Set a fixed width for each image container */
+  margin: 0 auto; /* Center the image container */
+  border: 1px solid burlywood; /* Add a border around the image container */
+  border-radius: 8px; /* Adjust the border-radius as needed */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Add this CSS to your existing stylesheet */
+
+.sports-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.health {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust the margin between health items */
+  width: calc(33.33% - 20px); /* Calculate width for three images with margin */
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.health img {
+  max-width: 100%;
+  border-radius: 8px; /* Adjust the border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.health-info {
+  margin-top: 15px;
+}
+
+.health-info h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.health-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+.health-info a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #e44d26;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.health img:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.health:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.health img-container {
+  width: 200px; /* Set a fixed width for each image container */
+  margin: 0 auto; /* Center the image container */
+  border: 1px solid burlywood; /* Add a border around the image container */
+  border-radius: 8px; /* Adjust the border-radius as needed */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Add this CSS to your existing stylesheet */
+
+.store-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.graduates {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust the margin between graduates items */
+  width: calc(33.33% - 20px); /* Calculate width for three images with margin */
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.graduates img {
+  max-width: 100%;
+  border-radius: 8px; /* Adjust the border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.graduates-info {
+  margin-top: 15px;
+}
+
+.graduates-info h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.graduates-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+.graduates-info a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #e44d26;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.graduates img:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.graduates:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.graduates img-container {
+  width: 200px; /* Set a fixed width for each image container */
+  margin: 0 auto; /* Center the image container */
+  border: 1px solid burlywood; /* Add a border around the image container */
+  border-radius: 8px; /* Adjust the border-radius as needed */
+  overflow: hidden; /* Hide any overflowing content */
+}
+.fourIcons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px; /* Adjust the margin as needed */
+  /* width: 200px; */
+}
+.Login-Singnup i {
+  margin-left: 10px; /* Adjust the margin between icons */
+  font-size: 16px; /* Adjust the font size of icons */
+  cursor: pointer;
+  border: 2px solid #3498db; /* Set the border color as needed */
+  padding: 6px; /* Add padding to the icons */
+  border-radius: 50%; /* Make the border circular */
+  color: #3498db; /* Set the icon color */
+}
+.login-link {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 16px; /* Adjust the font size of the login link */
+  margin-left: auto; /* Move the login link to the right */
+}
+.user-icon {
+  font-size: 16px;
+  cursor: pointer;
+  color: #3498db; /* Set the icon color */
+}
+
+
+/* Style the image container */
+.payment-gateway-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+/* Style the image */
+.payment-gateway-image img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* Customize each social media icon */
+.facebook-icon { background-color: #3b5998; }
+.twitter-icon { background-color: #1da1f2; }
+.instagram-icon { background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); }
+.social-links{
+  padding: 10px;
+  margin: 10px;
+}
+
+.categories-container{
+  padding: 10px;
+  margin: 10px;
+}
+.contact-container{
+  padding: 10px;
+  margin: 10px;
+}
+footer {
+background-color: hsl(257, 88%, 46%);
+color: white;
+text-align: center;
+padding: 10px;
+margin-bottom: 10%;
+}
